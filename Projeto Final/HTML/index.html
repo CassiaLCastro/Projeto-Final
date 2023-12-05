@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icone.png">
+    <title>VestBank</title>
+</head>
+
+<body>
+    <!--icone superior esquerdo com menu central-->
+    <header>
+        <div class="logo"><img src="../assets/logo1.png" alt="logo VestBank"></div>
+        <nav class="menu">
+            <a href="#">Comece a investir</a>
+            <a href="#">Simulador</a>
+            <a href="#">Investimentos</a>
+            <a href="#">Preços</a>
+            <a href="#">Blog</a>
+            <a href="#">InvestNews</a>
+        </nav>
+        <!--botões superior direito-->
+        <div class="buttons">
+            <div class="button1">
+                <p>Quero ser investbank</p>
+                <img src="../assets/setadireita.png">
+            </div>
+
+            <div class="button2">
+                <p>Login</p>
+                <img src="../assets/login.png">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- banner principal com o fundo azul-->
+        <section>
+            <div class="banner">
+                <div id="titulo">
+                    <a id="vestbank" href="#">VestBank ></a>
+                    <p id="simulador">Simulador de Investimentos</p>
+                </div>
+
+                <div id="titulo2">
+                    <h2>Simulador de investimentos</h2>
+                    <p id="texto">Conheça o simulador de investimentos da VestBank. Veja quanto seu dinheiro pode render
+                        ao simular
+                        investimentos de tesouro direto, CDB e LC, LCI e LCA em relação a poupança.</p>
+                </div>
+            </div>
+        </section>
+        <!--CONTAINER 1:  informações para Simulação de Investimento (Tesouro Prefixado) -->
+        <section>
+            <div class="container1">
+                <h3>Simule agora</h3>
+                <p id="texto2">Faça uma comparação e comece a investir em uma experiência fácil e intuitiva:</p>
+
+                <!--MENU2: São links em linha na horizontal-->
+                <div class="menu3">
+                    <a href="#">Tesouro Prefixado</a>
+                    <a href="#">Tesouro Selic</a>
+                    <a href="#">Tesouro IPCA+</a>
+                    <a href="#">CDB e LC</a>
+                    <a href="#">LCl e LCA</a>
+                    <hr id="hr1">
+                </div>
+                <!--CONTAINER2: informações para Simulação de Investimentos (Simulação de 2Anos).-->
+                <div class="container2">
+                    <div id="div1">
+                        <h3>Para começar, qual valor você gostaria de investir?</h3>
+                        <div class="add">
+                            <div id="number">
+                                <button id="menos" onclick="removerInicial()">-</button>
+                                <p class="numero" id="valorInicial">R$ 50,00</p>
+                                <button id="mais" onclick="adicionarInicial()">+</button>
+                            </div>
+
+                            <h3>E por mês, quanto gostaria de depositar?</h3>
+                            <div id="number">
+                                <button id="menos" onclick="removerMensal()">-</button>
+                                <p class="numero" id="valorMensal">R$ 50,00</p>
+                                <button id="mais" onclick="adicionarMensal()">+</button>
+                            </div>
+                        </div>
+
+                        <h3>Quanto tempo deixaria seu dinheiro investido?</h3>
+                        <p class="numero" id="qntdMeses">1 Mês</p>
+                        <input type="range" name="meses" id="meses" min="0" max="7" value="0">
+                    </div>
+
+                    <div id="div2">
+                        <h3>Em <span id="resultMeses">1</span> mes você teria</h3>
+                        <h1 id="resInvestimento">R$ 14.658,57</h1>
+                        <hr id="hr2">
+                        <p id="texto3">Valor líquido com os impostos descontados<br>
+                            Total investido: R$ <span id="totalInvestido">12.450,00</span><br>
+                            Na poupança, seu dinheiro renderia: R$1.097,18<br>
+                            No Tesouro IPCA+, seu dinheiro renderia: R$ 2.208,27
+                        </p>
+                        <p id="texto4">Valores utilizados no simulador de investimentos (referentes à data de última
+                            atualização - esses valores podem alterar de acordo com o mercado):<br>
+                            - Data da última atualização: 30/06/2022<br>
+                            - Porcentagem de rentabilidade da Poupança: 0,50% a.m.<br>
+                            - Porcentagem de rentabilidade do Tesouro IPCA+: IPCA + 5,93% (Inflação 7,07% a.a.)</p>
+                    </div>
+                </div>
+                <!--butão (conheça esse produto)-->
+                <div class="container3">
+                    <button>Conheça esse produto</button>
+                    <div id="opcoes"><a href="#">Veja todas as opções de investimentos</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--container rodapé-->
+    <footer>
+        <!--primeira seção do rodapé-->
+        <section class="ultima">
+            <div class="linha1">
+                <!--icone playsstore e applestore-->
+                <div id="primeira">
+                    <span>Baixe o app</span>
+                    <a href="#"><img src="../assets/apple.png" alt="apple store"
+                            style="width: 162px;height: 50px; margin-left: -6px;"></a>
+                    <a href="#"><img src="../assets/google.png" alt="google store" style="width: 150px; height: 50px ;"></a>
+                </div>
+                <!--fale conosco da primera seção do rodapé-->
+                <div>
+                    <span>Fale conosco</span>
+                    <a href="#">Dúvidas frequentes</a>
+                    <a href="#">VestBank@vestbank.com.br</a>
+                    <p>Tel.: (11) 3841-4515</p>
+                    <p>em dias úteis, das <span>9h às 18h</span></p>
+                    <p>SAC 0800 168 2265</p>
+                </div>
+                <!--ouvidoria da primera seção do rodapé-->
+                <div>
+                    <span>Ouvidoria</span>
+                    <p>0800 727 7784</p>
+                    <a href="#">ouvidoria@vestbank.com.br</a>
+                    <a href="#">Atendimento das <span>9h às 18h</span>(dias úteis)</a>
+                </div>
+                <!--entre em contato da primera seção do rodapé-->
+                <div>
+                    <span>Entre em contato com a gente</span>
+                    <p>Se você é jornalista</p>
+                    <a href="#">press@vestbank.com.br</a>
+                    <p>Convites para eventos:</p>
+                    <a href="#">events@vestbank.com.br</a>
+                    <p>Patrocínios e publicidade:</p>
+                    <a href="#">marketing@vestbank.com.br</a>
+                </div>
+            </div>
+            <!--segunda seção do rodapé-->
+            <div class="linha2">
+                <!--logo VestBank-->
+                <div>
+                    <a href="#titulo"><img id="mini-logo" src="../assets/logo2.png" alt="Logo VestBank"></a>
+                </div>
+                <!--endereço e complemento-->
+                <div>
+                    <p>Rua Valentia, nº 66, 11º andar, Pimentão Central, CEP 00000-888, Saída da Entrada - SS</p>
+                </div>
+                <!--icones da segunda seção do rodapé-->
+                <div class="icones">
+                    <a href="https://github.com/carlospandir" target="_blank"><img src="../assets/catgit.png" alt="Logo Github" title="Carlos H G V"></a>
+                    <a href="https://github.com/carloshosiqueira" target="_blank"><img src="../assets/catgit.png" alt="Logo Github" title="Carlos H O S"></a>
+                    <a href="https://github.com/CassiaLCastro" target="_blank"><img src="../assets/catgit.png" alt="Logo Github" title="Cassia L C"></a>
+                    <a href="https://github.com/joystefany" target="_blank"><img src="../assets/catgit.png" alt="Logo Github" title="Joyce S S L"></a>
+                    <a href="https://github.com/ricksantos77" target="_blank"><img src="../assets/catgit.png" alt="Logo Github" title="Rick S F"></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+<script src="../JS/script.js"></script>
+
+</html>
